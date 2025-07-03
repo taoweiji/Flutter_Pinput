@@ -325,6 +325,10 @@ class _PinputState extends State<Pinput>
           }
         };
         break;
+      default:
+        forcePressEnabled = false;
+        textSelectionControls ??= materialTextSelectionHandleControls;
+        break;
     }
 
     return _PinputFormField(
